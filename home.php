@@ -1,9 +1,14 @@
+<?php
+    
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Book Library</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="books.js"></script>
 </head>
 
 <body>
@@ -23,34 +28,16 @@
         <div id="content">
 
             <div id="content_left">
+                <!-- Display all the categories -->
                 <div class="content_left_section">
                     <h1>Categories</h1>
-                    <ul>
-                        <li><a href="subpage.html">Donec accumsan urna</a></li>
-                        <li><a href="subpage.html">Proin vulputate justo</a></li>
-                        <li><a href="#">In sed risus ac feli</a></li>
-                        <li><a href="#">Aliquam tristique dolor</a></li>
-                        <li><a href="#">Maece nas metus</a></li>
-                        <li><a href="#">Sed pellentesque placerat</a></li>
-                        <li><a href="#">Suspen disse</a></li>
-                        <li><a href="#">Maece nas metus</a></li>
-                        <li><a href="#">In sed risus ac feli</a></li>
-                    </ul>
+                    <ul id="categories"></ul>
                 </div>
+
+                <!-- Display the topBooks -->
                 <div class="content_left_section">
-                    <h1>Bestsellers</h1>
-                    <ul>
-                        <li><a href="#">Vestibulum ullamcorper</a></li>
-                        <li><a href="#">Maece nas metus</a></li>
-                        <li><a href="#">In sed risus ac feli</a></li>
-                        <li><a href="#">Praesent mattis varius</a></li>
-                        <li><a href="#">Maece nas metus</a></li>
-                        <li><a href="#">In sed risus ac feli</a></li>
-                        <li><a href="http://www.flashmo.com" target="_parent">Flash Templates</a></li>
-                        <li><a href="http://www.templatemo.com" target="_parent">CSS Templates</a></li>
-                        <li><a href="http://www.webdesignmo.com" target="_parent">Web Design</a></li>
-                        <li><a href="http://www.photovaco.com" target="_parent">Free Photos</a></li>
-                    </ul>
+                    <h1>Top Books</h1>
+                    <ul id="topBooks"></ul>
                 </div>
 
                 <div class="content_left_section">
@@ -66,11 +53,12 @@
 
             <div id="content_right">
                 <div class=" product_box">
-                    <h1>Photography <span>(by Best Author)</span></h1>
-                    <img src="images/image_01.jpg" alt="image" />
+                    <h1>I Choose You!<span>(by Tracy West)</span></h1>
+                    <!-- <img src="images/image_01.jpg" alt="image" /> -->
+                    <img src="books\pokemon\cover.jpg" alt="image"/>
                     <div class="product_info">
-                        <p>Etiam luctus. Quisque facilisis suscipit elit. Curabitur...</p>
-                        <!-- <h3>$55</h3> -->
+                        <p>Ash wants to be the world's greatest Pokemon master. With Pikachu...</p>
+                        <h3>$28.34</h3>
                         <!-- <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div> -->
                         <div class="detail_button"><a href="subpage.html">Detail</a></div>
                     </div>
@@ -80,12 +68,13 @@
                 <div class="cleaner_with_width">&nbsp;</div>
 
                 <div class="product_box">
-                    <h1>Cooking <span>(by New Author)</span></h1>
-                    <img src="images/image_02.jpg" alt="image" />
+                    <h1>Wizard of Oz <span>(by L. Frank Baum)</span></h1>
+                    <!-- <img src="images/image_02.jpg" alt="image" /> -->
+                    <img src="books\wizardofoz\cover.jpg" alt="image" />
                     <div class="product_info">
-                        <p>Aliquam a dui, ac magna quis est eleifend dictum.</p>
-                        <h3>$35</h3>
-                        <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                        <p>Follow the yellow brick road! Dorothy thinks she's...</p>
+                        <h3>$8.70</h3>
+                        <!-- <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div> -->
                         <div class="detail_button"><a href="subpage.html">Detail</a></div>
                     </div>
                     <div class="cleaner">&nbsp;</div>
@@ -94,12 +83,13 @@
                 <div class="cleaner_with_height">&nbsp;</div>
 
                 <div class="product_box">
-                    <h1>Gardening <span>(by Famous Author)</span></h1>
-                    <img src="images/image_03.jpg" alt="image" />
+                    <h1>The Hobbit <span>(by J.R.R. Tolkien)</span></h1>
+                    <!-- <img src="images/image_03.jpg" alt="image" /> -->
+                    <img src="books\hobbit\cover.jpg" alt="image" />
                     <div class="product_info">
-                        <p>Ut fringilla enim sed turpis. Sed justo dolor, convallis at.</p>
-                        <h3>$65</h3>
-                        <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                        <p>Written for J.R.R. Tolkien’s own children, The Hob...</p>
+                        <h3>$11.16</h3>
+                        <!-- <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div> -->
                         <div class="detail_button"><a href="subpage.html">Detail</a></div>
                     </div>
                     <div class="cleaner">&nbsp;</div>
@@ -108,12 +98,13 @@
                 <div class="cleaner_with_width">&nbsp;</div>
 
                 <div class="product_box">
-                    <h1>Sushi Book <span>(by Japanese Name)</span></h1>
-                    <img src="images/image_04.jpg" alt="image" />
+                    <h1>Mensa Kakuro<span>(by Conceptis)</span></h1>
+                    <!-- <img src="images/image_04.jpg" alt="image" /> -->
+                    <img src="books\kakuro\cover.jpg" alt="image" />
                     <div class="product_info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <h3>$45</h3>
-                        <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                        <p>The trick to kakuro is in making it all add up: the...</p>
+                        <h3>$8.95</h3>
+                        <!-- <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div> -->
                         <div class="detail_button"><a href="subpage.html">Detail</a></div>
                     </div>
                     <div class="cleaner">&nbsp;</div>
