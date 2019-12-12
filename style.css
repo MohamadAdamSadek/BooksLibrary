@@ -132,7 +132,7 @@ img {
 	width: 960px;
 	height: 285px;
 	padding: 0;
-	margin: 0;
+	margin-bottom: 5px;
 	background: url(images/old-library-book.jpg) no-repeat;
 	background-size: cover;
 	/* background: url(images/ header_bg.jpg) no-repeat; */
@@ -177,7 +177,6 @@ img {
 	 margin: 0;
 	 padding: 0; 
 }
-
 
 /* end of header */
 
@@ -237,10 +236,6 @@ img {
 .content_left_section li a:hover, .content_left_section li .current{
 	color: #fcf88e;
 }
-
-
-
-
 
 #content_right .product_box {
 	float: left;
@@ -310,6 +305,44 @@ img {
 .product_info p {
 	margin-bottom: 15px;
 }
+
+img{
+	width:100px;
+	height:150px;
+}
+
+/* Add book */
+#newBooks{
+	background-color: #41372d; 
+	float: left;
+	width: 650px;
+	padding: 10px;
+	color: #cbc750;
+	font-size: medium;
+}
+
+#newBooks input{
+	width: 200px;
+	margin: 10px;
+}
+
+#newBooks textarea{
+	margin: 10px;
+}
+
+#newBooks input[type=submit]{
+	clear: both;
+	text-align: center;
+	display: block;
+	width: 100px;
+	padding: 4px 0 5px 0;
+	margin-bottom: 10px; 
+	background: url(images/btn_01.jpg) no-repeat;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* Add book end */
 
 /* end of content */
 
