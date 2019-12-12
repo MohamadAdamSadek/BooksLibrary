@@ -37,7 +37,11 @@
         }
 
         if(isset($_REQUEST["mode"]) && $_REQUEST["mode"] == "all"){
+<<<<<<< HEAD
             $query = "SELECT * FROM book";	
+=======
+            $query = "SELECT * FROM book GROUP BY CATEGORY";	
+>>>>>>> a078fa42f32d85d63f7f18df1b7d4b664157aa17
             $statement = $conn->prepare($query);
             $statement->execute();
         
@@ -49,6 +53,7 @@
 
             echo json_encode($userData_List);
         }
+<<<<<<< HEAD
 
         if(isset($_REQUEST["mode"]) && $_REQUEST["mode"] == "single" && isset($_REQUEST["title"])){
             $title = $_REQUEST["title"];
@@ -65,6 +70,8 @@
             echo json_encode($userData_List);
         }
         
+=======
+>>>>>>> a078fa42f32d85d63f7f18df1b7d4b664157aa17
         // echo "Connected successfully <br>";
         // $rows = $conn->query("SELECT * FROM book");
 
