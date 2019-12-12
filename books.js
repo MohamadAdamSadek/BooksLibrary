@@ -1,5 +1,7 @@
-// Done by Mohamad Adam Sadek ID: 201600322
+// Done by Mohamad Adam Sadek ID: 201600322 
+// This js file controls alot of the interactions in the rest of the pages
 
+// load left tab at beginning of every page
 window.onload = function () {
     fillCategory();
     getTopBooks();
@@ -76,7 +78,7 @@ function getBookByTitle(title) {
             var p = document.createElement("p");
 
             h1.innerHTML = list[0].TITLE;
-            img.src = "images/image_02.jpg";
+            img.src = "images/" + title + ".jpg";
             div2.className = "image_panel";
             li1.innerHTML = "By " + list[0].AUTHOR;
             li2.innerHTML = "Published in " + list[0].YEAR;
@@ -140,6 +142,7 @@ function sortByCategory() {
         });
 }
 
+// get all the book titles for a category
 function getTitlesByCategory(category) {
     if (category != "") {
         fetch("booksToJSON.php?mode=search&category=\"" + category + "\"")

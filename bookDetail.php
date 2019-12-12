@@ -1,13 +1,14 @@
-<!-- Done by Mohamad Adam Sadek ID: 201600322 -->
+<!-- Done by Mohamad Adam Sadek ID: 201600322 
+     This page displays all the details of a book by receiving a title parameter -->
 
 <?php
     if(isset($_REQUEST["title"])){
         $title = $_REQUEST["title"];
     }
-    // else{
-    //     header("Location: searchBook.php");
-    //     die();
-    // }
+    else{
+        header("Location: searchBook.php");
+        die();
+    }
 ?>
 <!DOCTYPE html>
 <html>

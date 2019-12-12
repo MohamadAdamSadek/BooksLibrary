@@ -1,4 +1,6 @@
-<!-- Done by Mohamad Adam Sadek ID: 201600322 -->
+<!-- Done by Mohamad Adam Sadek ID: 201600322 
+     This page shows all the categories and shows all the books of the category -->
+     
 <?php
     $category = "";
     if(isset($_REQUEST["category"])){

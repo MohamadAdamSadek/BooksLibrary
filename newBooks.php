@@ -1,5 +1,7 @@
 <?php
     // Done by Mohamad Adam Sadek ID: 201600322
+    // This php adds a new book to database, then redirects to searchBook.php
+
     $servername = "localhost";
     $username = "root";
     $password = "root";
@@ -19,12 +21,10 @@
 
         $sql = "INSERT INTO `book`(`TITLE`, `AUTHOR`, `CATEGORY`, `YEAR`, `PRICE`, `DESCRIPTION`) 
         VALUES (\"$title\",\"$author\",\"$category\",$year,$price,\"$description\")";
-        // use exec() because no results are returned
         $conn->exec($sql);
 
         header("Location: searchBook.php");
         die();
-        // echo "New record created successfully";
     }catch(PDOException $e)
     {
         echo "Connection failed: " . $e->getMessage();

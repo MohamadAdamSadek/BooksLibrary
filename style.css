@@ -1,5 +1,6 @@
 /*
 	Done by Mohamad Adam Sadek ID: 201600322
+	This css controls the css of all the pages
 */
 
 body {
@@ -135,7 +136,6 @@ img {
 	margin-bottom: 5px;
 	background: url(images/old-library-book.jpg) no-repeat;
 	background-size: cover;
-	/* background: url(images/ header_bg.jpg) no-repeat; */
 }
 
 #header a,a:hover {

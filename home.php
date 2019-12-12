@@ -1,4 +1,6 @@
-<!-- Done by Mohamad Adam Sadek ID: 201600322 -->
+<!-- Done by Mohamad Adam Sadek ID: 201600322 
+     Home page of the book library, it shows the categories and top books on the left 
+     and 4 random books on the right -->
 
 <!DOCTYPE html>
 <html>
@@ -40,16 +42,14 @@
 
             </div> <!-- end of content left -->
 
-            <div id="content_right">
+            <div id="content_right"> <!-- Begining of content right -->
                 <div class=" product_box">
                     <h1>I Choose You!<span>(by Tracy West)</span></h1>
-                    <!-- <img src="images/image_01.jpg" alt="image" /> -->
-                    <img src="books\pokemon\cover.jpg" alt="image"/>
+                    <img src="images/I Choose You!.jpg" alt="image"/>
                     <div class="product_info">
                         <p>Ash wants to be the world's greatest Pokemon mas...</p>
                         <h3>$28.34</h3>
-                        <!-- <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div> -->
-                        <div class="detail_button"><a href="bookDetail.php?title=&quot;I Choose You! (Pokemon Chapter Books)&quot;">Detail</a></div>
+                        <div class="detail_button"><a href="bookDetail.php?title=&quot;I Choose You!&quot;">Detail</a></div>
                     </div>
                     <div class="cleaner">&nbsp;</div>
                 </div>
@@ -58,12 +58,10 @@
 
                 <div class="product_box">
                     <h1>Wizard of Oz <span>(by L. Frank Baum)</span></h1>
-                    <!-- <img src="images/image_02.jpg" alt="image" /> -->
-                    <img src="books\wizardofoz\cover.jpg" alt="image" />
+                    <img src="images/The Wonderful Wizard of Oz.jpg" alt="image" />
                     <div class="product_info">
                         <p>Follow the yellow brick road! Dorothy thinks she's...</p>
                         <h3>$8.70</h3>
-                        <!-- <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div> -->
                         <div class="detail_button"><a href="bookDetail.php?title=&quot;The Wonderful Wizard of Oz&quot;">Detail</a></div>
                     </div>
                     <div class="cleaner">&nbsp;</div>
@@ -73,12 +71,10 @@
 
                 <div class="product_box">
                     <h1>The Hobbit <span>(by J.R.R. Tolkien)</span></h1>
-                    <!-- <img src="images/image_03.jpg" alt="image" /> -->
-                    <img src="books\hobbit\cover.jpg" alt="image" />
+                    <img src="images/The Hobbit.jpg" alt="image" />
                     <div class="product_info">
                         <p>Written for J.R.R. Tolkien’s own children, The Hob...</p>
                         <h3>$11.16</h3>
-                        <!-- <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div> -->
                         <div class="detail_button"><a href="bookDetail.php?title=&quot;The Hobbit&quot;">Detail</a></div>
                     </div>
                     <div class="cleaner">&nbsp;</div>
@@ -88,13 +84,11 @@
 
                 <div class="product_box">
                     <h1>Mensa Kakuro<span>(by Conceptis)</span></h1>
-                    <!-- <img src="images/image_04.jpg" alt="image" /> -->
-                    <img src="books\kakuro\cover.jpg" alt="image" />
+                    <img src="images/Mensa Kakuro.jpg" alt="image" />
                     <div class="product_info">
                         <p>The trick to kakuro is in making it all add up: the...</p>
                         <h3>$8.95</h3>
-                        <!-- <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div> -->
-                        <div class="detail_button"><a href="bookDetail.php?title=&quot;Mensa Kakuro (Official Mensa Puzzle Book)&quot;">Detail</a></div>
+                        <div class="detail_button"><a href="bookDetail.php?title=&quot;Mensa Kakuro&quot;">Detail</a></div>
                     </div>
                     <div class="cleaner">&nbsp;</div>
                 </div>
