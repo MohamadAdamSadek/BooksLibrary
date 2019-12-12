@@ -1,4 +1,6 @@
 <?php
+    // Done by Mohamad Adam Sadek ID: 201600322
+
     $servername = "localhost";
     $username = "root";
     $password = "root";
@@ -60,6 +62,21 @@
         
             while($row=$statement->fetch(PDO::FETCH_ASSOC)){
                 $userData_List["Book"][] = $row;	
+            }
+
+            echo json_encode($userData_List);
+        }
+
+        if(isset($_REQUEST["mode"]) && $_REQUEST["mode"] == "search" && isset($_REQUEST["category"])){
+            $category = $_REQUEST["category"];
+            $query = "SELECT title FROM book WHERE category = $category";	
+            $statement = $conn->prepare($query);
+            $statement->execute();
+        
+            $userData_List = array();
+        
+            while($row=$statement->fetch(PDO::FETCH_ASSOC)){
+                $userData_List["Category"][] = $row;	
             }
 
             echo json_encode($userData_List);

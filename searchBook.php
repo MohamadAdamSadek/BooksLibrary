@@ -1,14 +1,11 @@
 <!-- Done by Mohamad Adam Sadek ID: 201600322 -->
-
 <?php
-    if(isset($_REQUEST["title"])){
-        $title = $_REQUEST["title"];
+    $category = "";
+    if(isset($_REQUEST["category"])){
+        $category = $_REQUEST["category"];
     }
-    // else{
-    //     header("Location: searchBook.php");
-    //     die();
-    // }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +20,7 @@
             <ul>
                 <li class="title">CMPS Book Library</li>
                 <li><a href="addBook.php">Add Book</a></li>
-                <li><a href="searchBook.php">Search</a></li>
+                <li><a href="searchBook.php" class="current">Search</a></li>
                 <li><a href="home.php">Home</a></li>
             </ul>
         </div> <!-- end of menu -->
@@ -48,7 +45,12 @@
             </div> <!-- end of content left -->
 
             <div id="content_right">
-                <div id="bookDetail"></div>
+                <h1>Book Search</h1>
+                <h2>Choose a category:</h2>
+
+                <div id="selectCategory"></div>
+                <br>
+                <div id="allBooks"></div>
 
                 <div class="cleaner_with_height">&nbsp;</div>
 
@@ -56,9 +58,10 @@
 
             <div class="cleaner_with_height">&nbsp;</div>
         </div> <!-- end of content -->
-
         <script>
-            getBookByTitle(<?= $title?>);
+            // getAllBookTitles();
+            sortByCategory();
+            getTitlesByCategory("<?= $category?>");
         </script>
 </body>
 
