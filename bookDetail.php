@@ -1,4 +1,4 @@
-<!-- Done by Mohamad Adam Sadek ID: 201600322 
+<!-- Done by Mohamad Adam Sadek 
      This page displays all the details of a book by receiving a title parameter -->
 
 <?php

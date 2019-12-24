@@ -1,4 +1,4 @@
-<!-- Done by Mohamad Adam Sadek ID: 201600322 
+<!-- Done by Mohamad Adam Sadek 
      This page has a form to add a new book to the database -->
 
 <!DOCTYPE html>

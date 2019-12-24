@@ -1,5 +1,5 @@
 <?php
-    // Done by Mohamad Adam Sadek ID: 201600322
+    // Done by Mohamad Adam Sadek
     // This php file retrieves books from the database and send them as JSON
 
     $servername = "localhost";

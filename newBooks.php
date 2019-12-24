@@ -1,5 +1,5 @@
 <?php
-    // Done by Mohamad Adam Sadek ID: 201600322
+    // Done by Mohamad Adam Sadek
     // This php adds a new book to database, then redirects to searchBook.php
 
     $servername = "localhost";

@@ -1,4 +1,4 @@
-Done by Mohamad Adam Sadek ID: 201600322
+Done by Mohamad Adam Sadek
 
 The main page is home.php.
 

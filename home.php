@@ -1,4 +1,4 @@
-<!-- Done by Mohamad Adam Sadek ID: 201600322 
+<!-- Done by Mohamad Adam Sadek 
      Home page of the book library, it shows the categories and top books on the left 
      and 4 random books on the right -->
 

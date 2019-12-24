@@ -1,4 +1,4 @@
-// Done by Mohamad Adam Sadek ID: 201600322 
+// Done by Mohamad Adam Sadek 
 // This js file controls alot of the interactions in the rest of the pages
 
 // load left tab at beginning of every page
